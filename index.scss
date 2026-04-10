@@ -28,8 +28,57 @@ img {
 	max-width: 100%;
 }
 
-div {
-	h2 {
-		background-color: aliceblue;
-	}
+// === variables ===
+
+// theme colors
+$primary: #0a6ffd;
+$secondary: #6c757d;
+$success: #198755;
+$danger: #dc3444;
+$warning: #ffc106;
+$light: #f8f9fa;
+
+// spacing
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+// borders
+$base-border-thickness: 1px;
+$base-border-radius: 20px;
+
+h1 {
+	color: $primary;
+	margin-bottom: $base-margin;
+}
+
+a {
+	color: $secondary;
+}
+
+button {
+	color: white;
+	border: 0;
+	background: $primary;
+	border-radius: $base-border-radius;
+	padding: $base-padding;
+}
+
+.error {
+	color: $danger;
+	border-color: $danger;
+	border-style: solid;
+	margin: $base-margin;
+	padding: $base-padding;
+	border-radius: $base-border-radius;
+	border-width: $base-border-thickness;
+}
+
+.notification {
+	color: $secondary;
+	border: $secondary;
+	border-style: solid;
+	margin: $base-margin;
+	padding: $base-padding;
+	border-radius: $base-border-radius;
+	border-width: $base-border-thickness;
 }
